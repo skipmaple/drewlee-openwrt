@@ -154,6 +154,13 @@ The partition table has been altered.
 Syncing disks.
 ```
 
+#### Note for format usb storage
+ps: fomat filesystem
+
+```sh
+mkfs.ext4 /dev/sdXY
+```
+
 ### Step 5 (Optional)
 
 Resizing filesystem
