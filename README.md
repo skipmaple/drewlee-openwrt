@@ -78,6 +78,17 @@ Use this package 👇
 
 Wirte *.img.gz file to usb storage device
 
+```sh
+# Unpack image
+gunzip openwrt-*.img.gz
+ 
+# Identify disk (to replace sdX in the following command below)
+lsblk
+ 
+# Write image
+dd if=openwrt-21.02.0-x86-64-generic-ext4-combined.img bs=1M of=/dev/sdX
+```
+
 ### Step 2
 
 Start usb storage device system, set side router.
